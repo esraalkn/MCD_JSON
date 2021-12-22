@@ -14,5 +14,10 @@ namespace MCD_JSONOkuma
         public string EmailAdres { get; set; }
         public string TelefonNumarasi { get; set; }
         public string Sehir { get; set; }
+
+        public override string ToString()
+        {
+            return Isim+Soyisim;
+        }
     }
 }

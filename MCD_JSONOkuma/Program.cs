@@ -15,7 +15,10 @@ namespace MCD_JSONOkuma
             List<Personel> Data = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Personel>>(JsonOkunanData);
             for (int i = 0; i < 50; i++)
             {
-                Console.WriteLine(Data[i].Isim);
+                Console.Write(Data[i].Isim + " ");
+                Console.WriteLine(" ");
+                Console.Write(Data[i].Soyisim);
+                
             }
             Console.ReadLine();
         }
